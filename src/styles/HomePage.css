@@ -1,0 +1,108 @@
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.moveArrow {
+  animation-name: mymove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.card-effect {
+  transition: transform 0.8s ease-in-out !important;
+}
+
+.card-effect:hover {
+  transform: scale(1.1) !important;
+}
+
+.animate {
+  position: relative;
+  animation-name: animate;
+  animation-duration: 1.3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate {
+  from {
+    bottom: -90px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.animate-quote {
+  position: relative;
+  animation-name: animate;
+  animation-duration: 1.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate {
+  from {
+    bottom: -90px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.animate-content {
+  position: relative;
+  animation-name: animate;
+  animation-duration: 1.3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate {
+  from {
+    bottom: -90px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.animate-button {
+  position: relative;
+  animation-name: animate;
+  animation-duration: 1.3s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate {
+  from {
+    bottom: -90px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.card-hover {
+  background: linear-gradient(#67acda 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: 0.6s, background-position 0s;
+}
+.card-hover:hover {
+  --p: 100%;
+  color: #fff;
+}
