@@ -1,0 +1,20 @@
+.icon,
+.icon1,
+.icon2,
+.icon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+.icon:hover,
+.icon1:hover,
+.icon2:hover,
+.icon3:hover {
+  color: white;
+  background-color: #3498db;
+}

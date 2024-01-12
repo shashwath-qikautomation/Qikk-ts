@@ -1,0 +1,61 @@
+.Card:hover{
+transform: scale(1) !important;
+}
+.hovCard:hover .hoover{
+  background-color:#64A8E3;
+  color: white;
+}
+.hoover {
+  background-color: #DBDBDB;
+  margin: 8px;
+ margin-top:175px ;
+ position: static; 
+}
+.qik:hover{
+  background-position: 0;
+  color: white;
+}
+.qik{
+  background: linear-gradient(45deg,#64A8E3 50%,white 50% );
+  transition: 1.2s;
+  background-position: 100%;
+  background-size: 1000%;
+
+}
+
+.hoverIcon img {
+  filter: saturate(0%);
+}
+.hoverIcon:hover img {
+  filter: saturate(100%);
+  cursor: pointer;
+}
+/* h2.head{
+  display: inline-block;
+  width: 300px;
+  position: relative;
+}
+h2.head::before{
+  content: ' ';
+  background-color: #5EAFF6;
+  display: flex;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+
+}
+h2.head::after{
+  content: ' ';
+  background-color: #5EAFF6;
+  display: flex;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+
+} */

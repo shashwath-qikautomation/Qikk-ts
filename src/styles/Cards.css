@@ -1,0 +1,26 @@
+.card {
+  transition: 300ms ease-in-out;
+  height: auto;
+  width: auto;
+}
+
+.card-title {
+  font-weight: bold;
+}
+.card:hover {
+  background-color: #67acda;
+  transform: scale(1.1) !important;
+  cursor: pointer;
+  bottom: 0;
+  height: auto;
+
+  /* transition: 0.5s; */
+  /* background-image: linear-gradient(to bottom left, #67acda);
+    color:black; */
+  /* background-position: top; */
+}
+
+.card button:hover {
+  background-color: white;
+  color: black;
+}

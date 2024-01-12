@@ -1,0 +1,70 @@
+
+.accordion{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+ 
+   
+    
+}
+.item{
+    column-gap: 24px;
+    row-gap: 32px;
+    border-top: 4px solid #228be6;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0 0;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+    
+   
+    
+}
+.text{
+    color:  #228be6;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px; 
+    padding-right: 10px;
+  
+  
+   
+    
+}
+.icons{
+    width: 20px;
+    height: 20px;
+    color:  #228be6;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 3px;
+ 
+}
+   
+
+    
+
+.hidden-box{
+    grid-column: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+}
+.hidden-box p{
+    line-height: 1.6;
+    margin-bottom: 24px;
+   
+    
+}
+.active-box{
+    max-height: 50%;
+    margin-bottom: 24px;
+    transition: max-height 0.3s ease;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
