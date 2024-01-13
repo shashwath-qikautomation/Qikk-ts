@@ -1,7 +1,18 @@
-import React from 'react'
+import React from "react";
+import "../styles/Button.css";
 
-export const Button = () => {
-  return (
-    <div>Button</div>
-  )
+interface ButtonProps {
+  width: string;
+  height: string;
+  name: string;
 }
+
+const Buttons = React.FC<ButtonProps>({ width, height, name, onClick, color }) => {
+  return (
+    <button style={{ width: width }} className="button-style" onClick={onClick:}>
+      {name}
+    </button>
+  );
+};
+
+export default Buttons;
