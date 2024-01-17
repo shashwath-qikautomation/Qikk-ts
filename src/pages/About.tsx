@@ -11,7 +11,7 @@ import { FaAward } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 
-import "../styles/About.css";
+// import Fade from "react-reveal/Fade";
 
 import Buttons from "../components/Button";
 import ResponsiveCollapseCard from "../components/responsiveCard";
@@ -27,7 +27,8 @@ import vinyasLogo from "../assets/clientsLogo/vinyas.jpg";
 
 import { routes } from "../helper/routes";
 
-// import Fade from "react-reveal/Fade";
+import "../styles/About.css";
+
 
 
 function About() {
