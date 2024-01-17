@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Button.css";
 
-interface ButtonProps {
+type ButtonProps = {
   width: string
   height: string
   name: string
