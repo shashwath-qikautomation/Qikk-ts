@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 
 type MyModalProps ={
  title : string
- children : string
+ children: JSX.Element[] | JSX.Element
 }
 
 function MyModal(props:MyModalProps) {

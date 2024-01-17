@@ -1,19 +1,22 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import { routes } from "./helper/routes";
-import { HomePage } from './pages/HomePage';
-import About from './pages/About';
-import Contact  from './pages/Contact';
-import { Blog } from './pages/Blog';
-import Gallery from './pages/Gallery';
-import { NavBar } from './components/NavBar';
-import { MaterialHandling } from "./pages/MaterialHandling";
-import { SmartStorage } from "./pages/SmartStorage";
-import { SmartInventory } from "./pages/SmartInventory";
-import { Traceability } from "./pages/Traceability";
-import Footer from './components/Footer';
 import { FaArrowCircleUp } from "react-icons/fa";
+import { routes } from "./helper/routes";
+
+
+import HomePage from './pages/HomePage';
+import  About  from './pages/About';
+import Contact  from './pages/Contact';
+import  Blog  from './pages/Blog';
+import  Gallery  from './pages/Gallery';
+import  NavBar  from './components/NavBar';
+import MaterialHandling from "./pages/MaterialHandling";
+import {SmartStorage} from "./pages/SmartStorage";
+import {SmartInventory} from "./pages/SmartInventory";
+import Traceability from "./pages/Traceability";
+import Footer  from './components/Footer';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 

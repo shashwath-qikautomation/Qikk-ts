@@ -5,10 +5,9 @@ import productImg from "../assets/images/product.svg";
 import Buttons from "./Button";
 
 type CardsProps ={
-productImg:
-title:
-text:
-onClick:
+title:string
+text: string
+onClick: Function
 }
 
 function Cards(props: CardsProps) {
