@@ -94,50 +94,7 @@ function Contact ()  {
                   </div>
                 </Fade>
               </div>
-              <div className="row mb-2">
-                {/* <Fade bottom>
-                  <div className="col col-xs-12 col-sm-12 col-lg-6 col-md-6 mb-2">
-                    <input
-                      type="text"
-                      className="form-control mb-3"
-                      placeholder="Enter your name"
-                      id="text-area"
-                    />
-                  </div>
-
-                  <div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 mb-2">
-                    <input
-                      type="text"
-                      className="form-control mb-3"
-                      placeholder="Enter your Email"
-                      id="email"
-                    />
-                  </div>
-                </Fade> */}
-                {/* <div className="row">
-                  <Fade bottom>
-                    <div className="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <select className="form-control mb-3" id="reason">
-                        <option>Reason 1</option>
-                        <option>Reason 2</option>
-                        <option>Reason 3</option>
-                      </select>
-                    </div>
-                  </Fade>
-                </div>
-                <div className="row">
-                  <Fade bottom>
-                    <div className="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input
-                        className="form-control mb-3"
-                        type="text"
-                        placeholder="Enter Subject"
-                        id="subject"
-                      />
-                    </div>
-                  </Fade>
-                </div> */}
-              </div>
+             
             </div>
             <Fade bottom>
               <div className="row">
