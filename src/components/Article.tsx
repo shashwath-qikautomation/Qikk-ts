@@ -221,7 +221,10 @@ function Article() {
           <Col className="col-md-5 card-hover shadow p-4 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Material Handling Solutions</h1>
             <p className="p">
-              Single Lane Conveyor Series 1 M Link Conveyor QIK-1000LC
+              Revolutionize efficiency with our cutting-edge Material Handling
+              Solutions for SMT, designed for efficient storage and easy access
+              to surface mount components. Elevate precision in your optimizing
+              your surface mounting technology processes.
             </p>
             <Buttons
               width={"120px"}
@@ -233,7 +236,10 @@ function Article() {
           <Col className="col-md-5 card-hover shadow p-4 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Smart Storage Solutions</h1>
             <p className="p">
-              Single Lane Conveyor Series 1 M Link Conveyor QIK-1000LC
+              Elevate your electronic manufacturing process with our Smart
+              Storage Solutions. Our Reel Racks for SMT are engineered for
+              precision, ensuring optimal organization and accessibility for
+              your electronic components.
             </p>
             <Buttons
               width={"120px"}
@@ -245,7 +251,10 @@ function Article() {
           <Col className="col-md-5 card-hover shadow p-4 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Smart Inventory Solutions</h1>
             <p className="p">
-              Single Lane Conveyor Series 1 M Link Conveyor QIK-1000LC
+              Our Smart Inventory Solutions bring intelligence to your SMT
+              inventory. With our Reel Racks, gain real-time visibility into
+              component availability, reduce pick-and-place machine downtime,
+              and optimize the overall production workflow.
             </p>
             <Buttons
               width={"120px"}
@@ -257,7 +266,10 @@ function Article() {
           <Col className="col-md-5 card-hover shadow p-4 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Traceability</h1>
             <p className="p">
-              Single Lane Conveyor Series 1 M Link Conveyor QIK-1000LC
+              Enhance electronic manufacturing precision with our SMT Reel Rack
+              Traceability, featuring barcode integration, unique serial
+              numbers, ERP synchronization, and real-time monitoring for
+              seamless production control and compliance assurance.
             </p>
             <Buttons
               width={"120px"}

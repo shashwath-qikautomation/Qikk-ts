@@ -1,13 +1,9 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
-import { useState } from "react";
-import { useRef } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
-import Fade from "react-reveal";
 import productImg from "../assets/images/product.svg";
+import { useState } from "react";
 import url1 from "../assets/pdf/img1.png";
 import url2 from "../assets/pdf/img2.png";
 import url3 from "../assets/pdf/img3.png";
@@ -17,9 +13,14 @@ import url6 from "../assets/pdf/img6.png";
 import url7 from "../assets/pdf/img7.png";
 import url8 from "../assets/pdf/img8.png";
 import MyModal from "../components/Model";
+import { useRef } from "react";
 import Buttons from "../components/Button";
-import ProductCard from "../components/ProductCard";
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
 import "../styles/Product.css";
+import Fade from "react-reveal";
+import ProductCard from "../components/ProductCard";
+
 
 function MaterialHandling() {
   const [showModal, setShowModal] = useState<boolean>(false);

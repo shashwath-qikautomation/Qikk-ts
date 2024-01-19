@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Buttons from "../components/Button";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -10,10 +11,12 @@ import "animate.css";
 
 
 
+
 function Contact ()  {
 
 
  
+
 
   return (
     <div className="container-lg pt-5 mt-5">
@@ -25,7 +28,7 @@ function Contact ()  {
                 className="contact-title mt-3 fs-2 d-flex justify-content-center fw-bolder"
                 style={{ fontSize: "calc(1.275rem + 1.5vw)" }}
               >
-                Get In Touch
+                Contact Us
               </h2>
             </Fade>
           </div>
@@ -83,14 +86,15 @@ function Contact ()  {
                   </div>
                 </Fade>
               </div>
-             
+              <div className="row mb-2">
+               
+              </div>
             </div>
             <Fade bottom>
               <div className="row">
                 <div className="col">
                   <Buttons
                     width={"120px"}
-                    className="btn"
                     name="SEND"
                   ></Buttons>
                 </div>
