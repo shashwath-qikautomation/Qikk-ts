@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaAngleRight } from "react-icons/fa6";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 import "animate.css";
 import "../styles/Blog.css";
 
