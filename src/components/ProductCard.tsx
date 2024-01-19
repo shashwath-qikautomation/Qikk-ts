@@ -35,7 +35,7 @@ function ProductCard(props:ProductCardProps) {
             width="105px"
             color="blue"
             name="Read More"
-          />{" "}
+          />
         </center>
       </Card>
     </Container>

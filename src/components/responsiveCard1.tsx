@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardBody, CardText } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import about1Svg from "../assets/images/about1.svg";
 import MyModal from "./Model";
 import Buttons from "./Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const ResponsiveCollapseCard1 = () => {
   const width = { width: "120px" };

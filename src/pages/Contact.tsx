@@ -8,21 +8,10 @@ import { MdHomeFilled } from "react-icons/md";
 import { Fade } from "react-reveal";
 import "animate.css";
 
-// type  ContactProps = {
-//    fontSize: string
-//     fontWeight: string
-//     marginBottom: string
-//     lineHeight: string
 
-// }
 
 function Contact ()  {
-//   const h2: ContactProps = {
-//     fontSize: "50px",
-//     fontWeight: "700",
-//     marginBottom: "66px",
-//     lineHeight: "1.3",
-//   };
+
 
  
 
