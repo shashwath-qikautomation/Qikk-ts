@@ -17,8 +17,15 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { RiInstagramLine } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import "../styles/Footer.css";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const navigateRouteTo = (path:string) => {
+    navigate(path);
+  };
+
   return (
     <div
       style={{
@@ -31,9 +38,7 @@ const Footer = () => {
       className="main-footer"
     >
       <div className="container p-5">
-        <div >
-          <Row className="gap-4">
-
+        <div className="row gap-4">
           <div className="col">
             <Col className="text-start">
               <h1 className="fs-6 pb-2 text-black">Get In Touch</h1>
@@ -62,7 +67,7 @@ const Footer = () => {
                     textDecoration: "none",
                     paddingLeft: "10px",
                   }}
-                  href="#"
+                  href="mailto:info@qikautomation.com"
                 >
                   info@qikautomation.com
                 </a>
@@ -85,96 +90,47 @@ const Footer = () => {
           </div>
           <div className="col">
             <Col className="text-start">
-              <Nav.Link className="pb-2" href={routes.about}>
-                About
-              </Nav.Link>
-              <Nav.Link className="pb-2" href={routes.contact}>
-                Contact
-              </Nav.Link>
-              <Nav.Link className="pb-2" href={routes.materialHandling}>
+              <h1 className="fs-6 pb-2 text-black">Products</h1>
+              <Nav.Link
+                className="pb-2"
+                onClick={() => navigateRouteTo(routes.materialHandling)}
+              >
                 Material Handling
               </Nav.Link>
-              <Nav.Link className="pb-2" href={routes.smartStorage}>
+              <Nav.Link
+                className="pb-2"
+                onClick={() => navigateRouteTo(routes.smartStorage)}
+              >
                 Smart Storage
               </Nav.Link>
-              <Nav.Link className="pb-2" href={routes.smartInventory}>
+              <Nav.Link
+                className="pb-2"
+                onClick={() => navigateRouteTo(routes.smartInventory)}
+              >
                 Smart Inventory
               </Nav.Link>
-              <Nav.Link className="pb-2" href={routes.traceability}>
+              <Nav.Link
+                className="pb-2"
+                onClick={() => navigateRouteTo(routes.traceability)}
+              >
                 Traceability
               </Nav.Link>
+              <div className="pt-3">
+                <Nav.Link
+                  className="pb-2"
+                  onClick={() => navigateRouteTo(routes.about)}
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link
+                  className="pb-2"
+                  onClick={() => navigateRouteTo(routes.contact)}
+                >
+                  Contact
+                </Nav.Link>
+              </div>
             </Col>
           </div>
-          {/* <div className="col-md-6 col-lg-3">
-            <Col className="text-start">
-              <h1 className="fs-6 pb-3 text-black">Gallery</h1>
-              <div className="row g-2">
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-                <div className="col-4">
-                  <Image
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    src={business}
-                  />
-                </div>
-              </div>
-              <Col className="pt-4">
-                <h1 className="fs-6 pb-3 text-black">Language</h1>
-                <div className="d-flex">
-                  <Image src={usa} width="20px" />
-                  <Image src={china} width="20px" />
-                  <Image src={japan} width="20px" />
-                  <Image src={thailand} width="20px" />
-                </div>
-              </Col>
-            </Col>
-          </div> */}
           <div className="col">
             <Col className="text-start">
               <h1 className="fs-6 pb-2 text-black">Mission</h1>
@@ -186,7 +142,6 @@ const Footer = () => {
               </p>
             </Col>
           </div>
-          </Row>
         </div>
         <div
           style={{ position: "relative", top: "40px" }}

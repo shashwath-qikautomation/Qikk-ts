@@ -11,7 +11,7 @@ import { FaAward } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 
 import Buttons from "../components/Button";
 import ResponsiveCollapseCard from "../components/responsiveCard";

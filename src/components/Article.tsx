@@ -1,13 +1,11 @@
 import React, { useState, useRef } from "react";
 import business from "../assets/images/business.svg";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { routes } from "../helper/routes";
 import { useNavigate } from "react-router-dom";
 import Image from "react-bootstrap/Image";
-
-import Fade from "react-reveal/Fade";
 import productImg from "../assets/images/product.svg";
 import Cards from "../components/Cards";
 import url1 from "../assets/pdf/img1.png";
@@ -25,6 +23,8 @@ import vinyasLogo from "../assets/clientsLogo/vinyas.jpg";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import "../styles/About.css";
+
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 function Article() {
@@ -192,7 +192,7 @@ function Article() {
               Quality, Intelligent and Creative along with an exclusive
               alignment to Industry 4.0.
             </p>
-            <Button
+            <Buttons
               width={width.width}
               height={"40px"}
               name={"Contact Us"}
@@ -226,7 +226,7 @@ function Article() {
               to surface mount components. Elevate precision in your optimizing
               your surface mounting technology processes.
             </p>
-            <Button
+            <Buttons
               width={"120px"}
               height={"40px"}
               name={"Read More"}
@@ -241,7 +241,7 @@ function Article() {
               precision, ensuring optimal organization and accessibility for
               your electronic components.
             </p>
-            <Button
+            <Buttons
               width={"120px"}
               height={"40px"}
               name={"Read More"}
@@ -256,7 +256,7 @@ function Article() {
               component availability, reduce pick-and-place machine downtime,
               and optimize the overall production workflow.
             </p>
-            <Button
+            <Buttons
               width={"120px"}
               height={"40px"}
               name={"Read More"}
@@ -271,7 +271,7 @@ function Article() {
               numbers, ERP synchronization, and real-time monitoring for
               seamless production control and compliance assurance.
             </p>
-            <Button
+            <Buttons
               width={"120px"}
               height={"40px"}
               name={"Read More"}

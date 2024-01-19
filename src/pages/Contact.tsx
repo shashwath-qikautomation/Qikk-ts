@@ -9,19 +9,14 @@ import { MdHomeFilled } from "react-icons/md";
 import { Fade } from "react-reveal";
 import "animate.css";
 
-function Contact() {
-  const h2 = {
-    fontSize: "50px",
-    fontWeight: "700",
-    marginBottom: "66px",
-    lineHeight: "1.3",
-  };
 
-  const contactTitle = {
-    fontSize: "27px",
-    fontWeight: "600",
-    marginBottom: "20px",
-  };
+
+
+function Contact ()  {
+
+
+ 
+
 
   return (
     <div className="container-lg pt-5 mt-5">
