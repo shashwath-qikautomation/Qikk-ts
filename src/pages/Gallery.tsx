@@ -75,9 +75,9 @@ const allCorosuelImage : GalleryImage[]= [
 
 function Gallery() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [showCarousel, setShowCarousel] = useState(false);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [filter, setFilter] = useState("All");
+  const [showCarousel, setShowCarousel] = useState<boolean>(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
+  const [filter, setFilter] = useState<string>("All");
 
   function openCarousel(index: number) {
     setSelectedImageIndex(index);

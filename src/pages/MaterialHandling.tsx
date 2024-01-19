@@ -38,14 +38,14 @@ function MaterialHandling() {
   const Width: { width: string } = { width: "150px" };
   const [pageNumber, setPageNumber] = useState<number>(1);
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
+  const onDocumentLoadSuccess = ( numPages:number ) => {
     setPageNumber(1);
   };
 
   const handleDownloadPdf = () => {
     if (canvasRef.current) {
       const captureNode = canvasRef.current;
-      const { width, height } = captureNode.getBoundingClientRect();
+      const { width, height }: DOMRect = captureNode.getBoundingClientRect();
       const pdf = new jsPDF({ unit: "px", format: [width, height] });
       html2canvas(captureNode).then((canvas) => {
         const dataUrl = canvas.toDataURL("image/png");
@@ -98,7 +98,7 @@ function MaterialHandling() {
                 style={{ backgroundColor: "blue" }}
                 title="Single Lane Conveyor Series 0.5 M Cooling Conveyor QIK-500CC "
                 text="PCB (Printed Circuit Board) conveyors are essential 
-                    equipment within the Surface Mount Technology (SMT) assembly...."
+                    equipment within the Surface Mount Technology (SMT)..."
                 productImg={productImg}
                 url={url1}
                 onClick={() => handleShowModal(url1)}
@@ -176,7 +176,7 @@ function MaterialHandling() {
                 className="mycard"
                 title=" Single Lane Series Magazine Loader QIK-ML "
                 text="PCB (Printed Circuit Board) loaders are an 
-                    integral part of the Surface Mount Technology (SMT) assembly process.... "
+                    integral part of the Surface Mount Technology (SMT)... "
                 productImg={productImg}
                 url={url7}
                 onClick={() => handleShowModal(url7)}
