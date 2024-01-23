@@ -7,7 +7,7 @@ import { routes } from "../helper/routes";
 import { useNavigate } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import productImg from "../assets/images/product.svg";
-import Cards from "../components/Cards";
+// import Cards from "../components/Cards";
 import url1 from "../assets/pdf/img1.png";
 import MyModal from "../components/Model";
 import Buttons from "../components/Button";
@@ -24,8 +24,8 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import "../styles/About.css";
 
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+import {Fade} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 function Article() {
   const navigate = useNavigate();
@@ -78,7 +78,7 @@ function Article() {
         className="d-flex justify-content-evenly p-3 "
       >
         <Col className="col-lg-2 col-md-4 p-2 col-6">
-          <Zoom duration="2800">
+          <Zoom duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -100,7 +100,7 @@ function Article() {
           </Zoom>
         </Col>
         <Col className="col-lg-2 col-md-4 p-2 col-6">
-          <Zoom delay="500" duration="2800">
+          <Zoom delay={500} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -122,7 +122,7 @@ function Article() {
           </Zoom>
         </Col>
         <Col className="col-lg-2 col-md-4 p-2 col-6">
-          <Zoom delay="1000" duration="2800">
+          <Zoom delay={1000} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -147,7 +147,7 @@ function Article() {
           </Zoom>
         </Col>
         <Col className="col-lg-2 col-md-4 p-2 col-6">
-          <Zoom delay="1500" duration="2800">
+          <Zoom delay={1500} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -171,12 +171,12 @@ function Article() {
       </Row>
       <Row xs={1} md={2} className="md-2 p-5">
         <Col className="pt-2">
-          <Fade left duration="1500">
+          <Fade direction="left" duration={1500}>
             <Image src={business} width="400" height="400px" fluid />
           </Fade>
         </Col>
         <Col className="gap-4 pt-4">
-          <Fade right duration="1500">
+          <Fade direction="right" duration={1500}>
             {" "}
             <h1
               style={{ fontSize: "calc(1.275rem + 1.5vw)" }}
@@ -201,7 +201,7 @@ function Article() {
           </Fade>
         </Col>
       </Row>
-      <Fade bottom duration="1500">
+      <Fade direction="down" duration={1500}>
         <Row className="gap-4 p-5">
           <Col>
             <h5 className="text-primary fs-5 fw-bold">
@@ -216,7 +216,7 @@ function Article() {
           </Col>
         </Row>
       </Fade>
-      <Fade bottom duration="1500">
+      <Fade direction="down" duration={1500}>
         <Row className="row gap-5 w-75 mx-auto justify-content-center">
           <Col className="col-md-5 card-hover shadow p-4 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Material Handling Solutions</h1>
@@ -284,9 +284,9 @@ function Article() {
         show={showModal}
         fullscreen={true}
         onHide={handleCloseModal}
-        className="modal-pdf border-0"
+        // className="modal-pdf border-0"
       >
-        <div className="image-frame text-center m-auto border-0">
+        <div className="modal-pdf border-0 image-frame text-center m-auto border-0">
           <img
             style={{ width: "100%" }}
             ref={canvasRef}

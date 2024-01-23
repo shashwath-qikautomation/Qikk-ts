@@ -12,7 +12,7 @@ import Article from "../components/Article";
 import Image from "react-bootstrap/Image";
 import "../styles/HomePage.css";
 import "animate.css";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ function HomePage() {
           />
         </Col>
       </Row>
-      <Fade bottom duration="1500">
+      <Fade direction="down" duration={1500}>
         <Row className="gap-4 p-2">
           <Col>
             <h5 className="text-primary fs-5 fw-bold">About Us</h5>
@@ -78,7 +78,7 @@ function HomePage() {
           </Col>
         </Row>
       </Fade>
-      <Fade bottom duration="1500">
+      <Fade direction="down" duration={1500}>
         <Row className="gap-4 p-5">
           <Col className="card-effect shadow p-4 mb-3 bg-white rounded">
             <h1 className="fs-4 fw-semibold">Quality</h1>

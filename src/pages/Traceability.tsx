@@ -2,12 +2,13 @@ import React from "react";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Fade from "react-reveal";
+import {Fade} from "react-awesome-reveal";
+// import Fade from "../components/fadeComponent";
 
 function Traceability() {
   return (
     <Container>
-      <Fade bottom>
+      <Fade direction="down">
         <Row className="d-flex justify-content-center mt-5">
           <div className="mt-5">
             <Col lg={12}>

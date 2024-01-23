@@ -6,29 +6,24 @@ import Buttons from "../components/Button";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdHomeFilled } from "react-icons/md";
-import { Fade } from "react-reveal";
-import "animate.css";
+import { Fade } from "react-awesome-reveal";
 
 
 
 
 function Contact ()  {
 
-
- 
-
-
   return (
     <div className="container-lg pt-5 mt-5">
       <div className="contact-section m-3">
         <div className="row">
           <div className="col col-xs-12 col-md-12 col-sm-12 col-lg-12">
-            <Fade bottom>
+            <Fade  direction="down">
               <h2
                 className="contact-title mt-3 fs-2 d-flex justify-content-center fw-bolder"
                 style={{ fontSize: "calc(1.275rem + 1.5vw)" }}
               >
-                Contact Us
+              Get In Touch
               </h2>
             </Fade>
           </div>
@@ -37,7 +32,7 @@ function Contact ()  {
           <div className="col col-xs-12 col-lg-8 col-md-12 col-sm-12 mb-4">
             <div className="form-group">
               <div className="row">
-                <Fade bottom>
+                <Fade  direction="down">
                   <div className="col-md-6">
                     <input
                       type="text"
@@ -56,7 +51,7 @@ function Contact ()  {
                     />
                   </div>
                 </Fade>
-                <Fade bottom>
+                <Fade direction="down">
                   <div className="col-12">
                     <textarea
                       rows={5}
@@ -66,7 +61,7 @@ function Contact ()  {
                     ></textarea>
                   </div>
                 </Fade>
-                <Fade bottom>
+                <Fade direction="down">
                   <div className="col-12">
                     <select className="form-control mb-3" id="reason">
                       <option>Reason 1</option>
@@ -75,7 +70,7 @@ function Contact ()  {
                     </select>
                   </div>
                 </Fade>
-                <Fade bottom>
+                <Fade direction="down">
                   <div className="col-12">
                     <input
                       className="form-control mb-3"
@@ -90,7 +85,7 @@ function Contact ()  {
                
               </div>
             </div>
-            <Fade bottom>
+            <Fade direction="down">
               <div className="row">
                 <div className="col">
                   <Buttons
@@ -102,7 +97,7 @@ function Contact ()  {
             </Fade>
           </div>
           <div className="col col-sm-12 col-md-4 col-lg-4 mb-5 ml-1">
-            <Fade bottom>
+            <Fade direction="down">
               <Card className="border border-0">
                 <Card.Body>
                   <Row>
