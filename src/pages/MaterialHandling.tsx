@@ -18,7 +18,7 @@ import Buttons from "../components/Button";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import "../styles/Product.css";
-import Fade from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 import ProductCard from "../components/ProductCard";
 
 
@@ -59,7 +59,7 @@ function MaterialHandling() {
   return (
     <div>
       <Container>
-        <Fade bottom>
+        <Fade direction="down">
           <Row className="d-flex justify-content-center mt-5">
             <div className="mt-5">
               <Col lg={12} sm={12} md={12}>
@@ -73,7 +73,7 @@ function MaterialHandling() {
             </div>
           </Row>
         </Fade>
-        <Fade bottom>
+        <Fade direction="down">
           <Row className="mt-5">
             <Col lg={12} sm={12} md={12}>
               <p className="d-flex justify-content-start text-justify ">
@@ -93,105 +93,105 @@ function MaterialHandling() {
 
         <Row className=" mt-4">
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 style={{ backgroundColor: "blue" }}
                 title="Single Lane Conveyor Series 0.5 M Cooling Conveyor QIK-500CC "
                 text="PCB (Printed Circuit Board) conveyors are essential 
                     equipment within the Surface Mount Technology (SMT)..."
-                productImg={productImg}
+       
                 url={url1}
                 onClick={() => handleShowModal(url1)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title="Single Lane Conveyor Series 0.5 M Inspection Conveyor QIK-500IC "
                 text="PCB (Printed Circuit
                      Board) conveyors are essential equipment within the Surface Mount Technology (SMT)..."
-                productImg={productImg}
+           
                 url={url2}
                 onClick={() => handleShowModal(url2)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title="Single Lane Conveyor Series 0.5 M Link Conveyor QIK-500LC "
                 text="PCB (Printed Circuit Board) conveyors
                      are essential equipment within the Surface Mount Technology (SMT) assembly... "
-                productImg={productImg}
+            
                 url={url3}
                 onClick={() => handleShowModal(url3)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title="Single Lane Conveyor Series 1 M Inspection Conveyor QIK-1000IC "
                 text="PCB (Printed Circuit Board) conveyors 
                     are essential equipment within the Surface Mount Technology "
-                productImg={productImg}
+            
                 url={url4}
                 onClick={() => handleShowModal(url4)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title="Single Lane Conveyor Series 1 M Cooling Conveyor QIK-1000CC "
                 text="PCB (Printed Circuit Board) conveyors
                     are essential equipment within the Surface Mount Technology (SMT)... "
-                productImg={productImg}
+         
                 url={url5}
                 onClick={() => handleShowModal(url5)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title=" Single Lane Conveyor Series 1 M Link Conveyor QIK-1000LC "
                 text="PCB (Printed Circuit Board) conveyors 
                     are essential equipment within the Surface Mount Technology (SMT) assembly.... "
-                productImg={productImg}
+       
                 url={url6}
                 onClick={() => handleShowModal(url6)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title=" Single Lane Series Magazine Loader QIK-ML "
                 text="PCB (Printed Circuit Board) loaders are an 
                     integral part of the Surface Mount Technology (SMT)... "
-                productImg={productImg}
+         
                 url={url7}
                 onClick={() => handleShowModal(url7)}
               />
             </Fade>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Fade bottom>
+            <Fade direction="down">
               <ProductCard
                 className="mycard"
                 title="Single Lane Series Magazine Unloader QIK-MUL "
                 text="PCB (Printed Circuit Board) 
                     unloaders play a crucial role in the Surface Mount Technology (SMT)... "
-                productImg={productImg}
+            
                 url={url8}
                 onClick={() => handleShowModal(url8)}
               />

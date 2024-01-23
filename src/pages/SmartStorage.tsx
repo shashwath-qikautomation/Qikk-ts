@@ -1,17 +1,17 @@
 import React from "react";
+import { useState, useRef } from "react";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ProductCard from "../components/ProductCard";
+import {Fade} from "react-awesome-reveal";
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
 import MyModal from "../components/Model";
-import productImg from "../assets/images/product.svg";
-import Fade from "react-reveal";
 import Buttons from "../components/Button";
 import url10 from "../assets/pdf/img10.png";
-import { useState, useRef } from "react";
-import html2canvas from "html2canvas";
+import productImg from "../assets/images/product.svg";
+import ProductCard from "../components/ProductCard";
 import "../styles/Product.css";
-import { jsPDF } from "jspdf";
 
 const SmartStorage = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -45,7 +45,7 @@ const SmartStorage = () => {
   return (
     <div>
       <Container>
-        <Fade bottom>
+        <Fade direction="down">
           <Row className="d-flex justify-content-center mt-5">
             <div className="mt-5">
               <Col lg={12}>
@@ -74,14 +74,13 @@ const SmartStorage = () => {
             </p>
           </Col>
         </Row>
-        <Fade bottom>
+        <Fade direction="down">
           <Row className="mt-4">
             <Col sm={12} md={6} lg={4}>
               <ProductCard
                 title="Smart Storage Series Smart Reel Storage System QIK-SRSS "
                 text="Our Storage system is equipped 
                     with features to improve component management, reduce errors... "
-                productImg={productImg}
                 url={url10}
                 onClick={() => handleShowModal(url10)}
               />

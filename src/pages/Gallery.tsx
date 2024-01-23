@@ -35,7 +35,7 @@ import { FaAngleRight } from "react-icons/fa";
 import Image from "react-bootstrap/Image";
 import { FaClone } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
-// import Fade from "react-reveal/Fade";
+import {Fade }from "react-awesome-reveal";
 import { IoClose } from "react-icons/io5";
 
 interface GalleryImage {
@@ -116,7 +116,7 @@ const filteredImages =
 
   return (
     <Container className="pt-4 pb-4 mt-5">
-      {/* <Fade bottom duration="1500"> */}
+      <Fade direction="down" duration={1500}>
         <Row className="mb-2 pt-4 mt-5 d-flex justify-content-center text-center">
           <Col xs={12} className="mb-4">
             <h1 className="text-primary fs-5 fw-bold">Our Projects</h1>
@@ -125,8 +125,8 @@ const filteredImages =
             </p>
           </Col>
         </Row>
-      {/* </Fade>
-      <Fade bottom duration="1500"> */}
+      </Fade>
+      <Fade direction="down" duration={1500}>
         <Row>
           <Col xs={12} className="mb-5">
             <ul>
@@ -169,12 +169,12 @@ const filteredImages =
             </ul>
           </Col>
         </Row>
-      {/* </Fade> */}
+      </Fade>
 
       <Row>
         {filteredImages.map((image, index) => (
           <Col key={index} xs={12} sm={12} md={4} lg={4} className="mb-4">
-            {/* <Fade bottom duration="1500"> */}
+            <Fade direction="down" duration={1500}>
               <div
                 className={`gallery-image-col ${
                   hoveredIndex === index ? "hovered" : ""
@@ -205,7 +205,7 @@ const filteredImages =
                   </div>
                 )}
               </div>
-            {/* </Fade> */}
+            </Fade>
           </Col>
         ))}
       </Row>

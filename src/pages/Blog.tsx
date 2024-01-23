@@ -3,8 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaAngleRight } from "react-icons/fa6";
-import Fade from "react-reveal/Fade";
-import "animate.css";
+import {Fade} from "react-awesome-reveal";
 import "../styles/Blog.css";
 
 function Blog() {
@@ -22,7 +21,7 @@ function Blog() {
   return (
     <Container className="pt-5 pb-5 mt-5 text-center">
       <Row className="mb-5 p-2 mt-5 ">
-        <Fade bottom duration="1500">
+        <Fade direction="down" duration={1500}>
           <Col xs={12} className="mb-5">
             <h1 className="text-primary fs-4 fw-bold mb-4">
               Unlocking Automation for Electronic Manufacturing Services to
@@ -43,7 +42,7 @@ function Blog() {
             </p>
           </Col>
         </Fade>
-        <Fade bottom duration="1500">
+        <Fade direction="down" duration={1500}>
           <Col xs={12} className="mb-4">
             <div className="accordion">
               <div className="item">
@@ -100,7 +99,7 @@ function Blog() {
             </div>
           </Col>
         </Fade>
-        <Fade bottom duration="1500">
+        <Fade  direction="down" duration={1500}>
           <Col xs={12}>
             <div className="accordion">
               <div className="item">

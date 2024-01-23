@@ -10,6 +10,7 @@ type ProductCardProps ={
   title:string
   text:string
   onClick:Function 
+  className?:string
   }
 
 function ProductCard(props:ProductCardProps) {

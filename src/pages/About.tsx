@@ -11,7 +11,8 @@ import { FaAward } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 
-import Fade from "react-reveal/Fade";
+import{ Fade }from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 import Buttons from "../components/Button";
 import ResponsiveCollapseCard from "../components/responsiveCard";
@@ -44,7 +45,7 @@ function About() {
     <div style={{ position: "relative", top: "110px" }}>
       <Container className="position-relative">
         <div>
-          <Fade bottom duration="1500">
+          <Fade direction="down" duration={1500}>
             <Row className="mt-1 gap-1 p-5 clearfix">
 
               <Col md={5} className="text-start">
@@ -76,7 +77,7 @@ function About() {
             </Row>
           </Fade>
         </div>
-        <Fade right duration="1500">
+        <Fade direction="right" duration={1500}>
           <Row>
             <div className="p-5">
               <h1 style={{ fontSize: "40px" }} className="fs-2 mt-1 fw-bolder">
@@ -88,18 +89,18 @@ function About() {
         <div>
           <Row className=" p-5">
             <Col md={6}>
-              <Fade left duration="1500">
+              <Fade direction="left" duration={1500}>
                 <ResponsiveCollapseCard1 />
               </Fade>
             </Col>
             <Col md={6}>
-              <Fade right duration="1500">
+              <Fade direction="right"  duration={1500}>
                 <ResponsiveCollapseCard />
               </Fade>
             </Col>
           </Row>
         </div>
-        <Fade right duration="1500">
+        <Fade direction="right"  duration={1500}>
           <Row>
             <div className="p5">
               <h1 style={{ fontSize: "40px" }} className="fs-2 mt-4 fw-bolder">
@@ -111,7 +112,7 @@ function About() {
         </Fade>
         <Row className="p-5">
           <Col md={4} className="text-center mb-3 col-lg-4 col-md-6">
-            <Fade left duration="1500">
+            <Fade direction="left" duration={1500}>
               <Card className="qik border border-0">
                 <Card.Header className="border border-0">
                   <FaAward size={"180px"} fluid />
@@ -129,7 +130,7 @@ function About() {
             </Fade>
           </Col>
           <Col md={4} className="text-center mb-3 col-lg-4 col-md-6">
-            <Fade bottom duration="1500">
+            <Fade direction="down"  duration={1500}>
               <Card className="qik border border-0">
                 <Card.Img
                   style={{ height: "170px" }}
@@ -150,7 +151,7 @@ function About() {
             </Fade>
           </Col>
           <Col md={4} className="text-center mb-3 col-lg-4 col-md-6">
-            <Fade right duration="1500">
+            <Fade direction="right"  duration={1500}>
               <Card className="qik border border-0">
                 <Card.Img
                   style={{ height: "180px" }}
@@ -177,7 +178,7 @@ function About() {
         className="d-flex justify-content-evenly p-3 gap-1"
       >
         <Col className="col-lg-2 col-md-4 col-6">
-          <Fade big clear duration="2800">
+          <Zoom duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -196,11 +197,11 @@ function About() {
                 </OverlayTrigger>
               </span>
             </div>
-          </Fade>
+          </Zoom>
         </Col>
 
         <Col className="col-lg-2 col-md-4 col-6">
-          <Fade big clear delay="500" duration="2800">
+          <Zoom delay={500} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -219,10 +220,10 @@ function About() {
                 </OverlayTrigger>
               </span>
             </div>
-          </Fade>
+          </Zoom>
         </Col>
         <Col className="col-lg-2 col-md-4 col-6">
-          <Fade big clear delay="1000" duration="2800">
+          <Zoom delay={1000} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -244,10 +245,10 @@ function About() {
                 </OverlayTrigger>
               </span>
             </div>
-          </Fade>
+          </Zoom>
         </Col>
         <Col className="col-lg-2 col-md-4 col-6">
-          <Fade big clear delay="1500" duration="2800">
+          <Zoom delay={1500} duration={2800}>
             <div className="hoverIcon">
               <span>
                 <OverlayTrigger
@@ -266,7 +267,7 @@ function About() {
                 </OverlayTrigger>
               </span>
             </div>
-          </Fade>
+          </Zoom>
         </Col>
       </Row>
     </div>

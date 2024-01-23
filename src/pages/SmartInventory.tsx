@@ -1,13 +1,13 @@
 import React from "react";
-import Fade from "react-reveal";
+import { useState, useRef } from "react";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ProductCard from "../components/ProductCard";
-import productImg from "../assets/images/product.svg";
-import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
+import{ Fade }from "react-awesome-reveal";
+import ProductCard from "../components/ProductCard";
+import productImg from "../assets/images/product.svg";
 import url9 from "../assets/pdf/img9.png";
 
 function SmartInventory() {
@@ -41,7 +41,7 @@ function SmartInventory() {
 
   return (
     <Container>
-      <Fade bottom>
+      <Fade direction="down">
         <Row className="d-flex justify-content-center mt-5">
           <div className="mt-5">
             <Col lg={12}>
@@ -71,14 +71,14 @@ function SmartInventory() {
         </Col>
       </Row>
 
-      <Fade bottom>
+      <Fade direction="down">
         <Row className="mt-4">
           <Col sm={12} md={6} lg={4}>
             <ProductCard
               title="Smart Storage Series Smart Component Incoming System QIK-SCIS "
               text="A Smart Incoming SMT System
                      Stream lines the process of receiving and inspection electronics component... "
-              productImg={productImg}
+             
               url={url9}
               onClick={() => handleShowModal(url9)}
             />
